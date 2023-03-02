@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;安装包&#34; tag</title>
+        <link>https://alicewanttobackuw.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 01 Mar 2023 20:45:45 +0800</pubDate>
+        <lastBuildDate>Wed, 01 Mar 2023 20:45:45 +0800</lastBuildDate>
+        <category>安装包</category>
+        <category>踩坑</category>
+        <category>NLP</category>
+        <category>文本分类</category>
+        <category>合工大</category>
+        <category>深度学习</category>
+        <category>hexo</category>
+        <category>shoka主题</category>
+        <item>
+            <guid isPermalink="true">https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</guid>
+            <title></title>
+            <link>https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</link>
+            <category>安装包</category>
+            <category>踩坑</category>
+            <pubDate>Wed, 01 Mar 2023 20:45:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;#&lt;/a&gt; pyopenjtalk 安装中解决 error: subprocess-exited-with-error&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🍭🍭欢迎各位友友来 &lt;a href=&#34;https://alicewanttobackuw.github.io/&#34;&gt;我后院 (建设中)&lt;/a&gt; 里踩踩🍭🍭&lt;br /&gt;
+📢 声明：&lt;br /&gt;
+转载，请先标注出处哦！编写不易，尊重一下劳动成果哦！&lt;br /&gt;
+个人博客网站 	==》&lt;a href=&#34;https://alicewanttobackuw.github.io/&#34;&gt;https://alicewanttobackuw.github.io/&lt;/a&gt;&lt;br /&gt;
+github	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0FsaWNlV2FudFRvQmFja1V3&#34;&gt;https://github.com/AliceWantToBackUw&lt;/span&gt;&lt;br /&gt;
+csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlbmd5dWUyOQ==&#34;&gt;https://blog.csdn.net/lengyue29&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#报错&#34;&gt;#&lt;/a&gt; 💢报错&lt;/h3&gt;
+&lt;p&gt;​		安装 &lt;code&gt;pyopenjtalk&lt;/code&gt;  始终报错&lt;br /&gt;
+ &amp;lt; img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAxODY0NS5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012018645.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;br /&gt;
+​		没有找到 &lt;code&gt;cmake&lt;/code&gt;  的模块。&lt;/p&gt;
+&lt;h3 id=&#34;解决&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决&#34;&gt;#&lt;/a&gt; 💘解决&lt;/h3&gt;
+&lt;p&gt;​		先去 &lt;code&gt;github&lt;/code&gt;  查看该包&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3I5eTkvcHlvcGVuanRhbGsvaXNzdWVzLzMz&#34;&gt; cmake がインストールしたのに &amp;quot;ModuleNotFoundError: No module named &#39;cmake&#39;&amp;quot;・Issue #33・r9y9/pyopenjtalk (github.com)&lt;/span&gt;&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAyMjYzOC5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012022638.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;br /&gt;
+​		可以发现有人已经提出来了，给出了他的修改方案&lt;br /&gt;
+ &amp;lt; img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAyMzAwNS5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012023005.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将 &lt;code&gt;python&lt;/code&gt;  编译器添加到&lt;strong&gt;系统环境变量&lt;/strong&gt;中，&lt;/li&gt;
+&lt;li&gt;注意是将 &lt;code&gt;Visual Studio&lt;/code&gt;  的 &lt;code&gt;CMake\bin&lt;/code&gt;  添加到系统环境变量中！！&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAyNjkyOC5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012026928.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;br /&gt;
+ 原因：可能是 &lt;code&gt;README.md&lt;/code&gt;  提到的  需要 C/C++ 编译器扩展&lt;br /&gt;
+ &amp;lt; img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAyODE4Ny5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012028187.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​		至此，可以 &lt;code&gt;pip install pyopenjtalk&lt;/code&gt;  安装成功了。&lt;br /&gt;
+​		但是，部分人还是无法安装成功，请 &lt;code&gt;pip list&lt;/code&gt;  检查一下是否安装了 &lt;code&gt;cmake&lt;/code&gt;  包。&lt;br /&gt;
+先 &lt;code&gt;pip uninstall cmake&lt;/code&gt; &lt;strong&gt; 卸载&lt;/strong&gt; &lt;code&gt;cmake&lt;/code&gt; ，&lt;strong&gt;再安装&lt;/strong&gt;！&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAzNDEzMS5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034131.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;lt;img src=&amp;quot;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uc3RhdGljYWx5LmNvbS9naC9BbGljZVdhbnRUb0JhY2tVdy9ibG9nLWltZ0BtYWluL1BpY0dvLzIwMjMwMzAxMjAzNDg5MC5wbmc=&#34;&gt;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034890.png&lt;/span&gt;&amp;quot;&amp;gt;&lt;/p&gt;
+&lt;h3 id=&#34;终于安装完成了累麻了&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终于安装完成了累麻了&#34;&gt;#&lt;/a&gt; 😥终于安装完成了，累麻了……&lt;/h3&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
