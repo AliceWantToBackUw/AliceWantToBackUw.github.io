@@ -5,21 +5,24 @@
         <link>https://alicewanttobackuw.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 09 Mar 2023 12:35:14 +0800</pubDate>
-        <lastBuildDate>Thu, 09 Mar 2023 12:35:14 +0800</lastBuildDate>
-        <category>hexo</category>
-        <category>shoka主题</category>
+        <pubDate>Wed, 01 Mar 2023 20:45:45 +0800</pubDate>
+        <lastBuildDate>Wed, 01 Mar 2023 20:45:45 +0800</lastBuildDate>
+        <category>安装包</category>
         <category>踩坑</category>
         <category>NLP</category>
         <category>文本分类</category>
         <category>合工大</category>
         <category>深度学习</category>
+        <category>hexo</category>
+        <category>shoka主题</category>
         <item>
-            <guid isPermalink="true">https://alicewanttobackuw.github.io/2023/03/09/pyopenjtalk%E5%AE%89%E8%A3%85/</guid>
-            <title></title>
-            <link>https://alicewanttobackuw.github.io/2023/03/09/pyopenjtalk%E5%AE%89%E8%A3%85/</link>
-            <pubDate>Thu, 09 Mar 2023 12:35:14 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;#&lt;/a&gt; pyopenjtalk 安装中解决 error: subprocess-exited-with-error&lt;/h1&gt;
+            <guid isPermalink="true">https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</guid>
+            <title>💢pyopenjtalk安装中解决error:subprocess-exited-with-error</title>
+            <link>https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</link>
+            <category>安装包</category>
+            <category>踩坑</category>
+            <pubDate>Wed, 01 Mar 2023 20:45:45 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;#&lt;/a&gt; pyopenjtalk 安装中解决 error: subprocess-exited-with-error&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;🍭🍭欢迎各位友友来 &lt;a href=&#34;https://alicewanttobackuw.github.io/&#34;&gt;我后院 (建设中)&lt;/a&gt; 里踩踩🍭🍭&lt;br /&gt;
 📢 声明：&lt;br /&gt;
@@ -215,9 +218,9 @@ csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4u
             <guid isPermalink="true">https://alicewanttobackuw.github.io/2023/01/29/shoka%E4%B8%BB%E9%A2%98%E6%AD%A3%E7%A1%AE%E9%A3%9F%E7%94%A8%E5%A7%BF%E5%8A%BF-%E9%9F%B3%E4%B9%90%E7%AF%87/</guid>
             <title>🎶hexo的shoka主题正确食用姿势——音乐篇🎶</title>
             <link>https://alicewanttobackuw.github.io/2023/01/29/shoka%E4%B8%BB%E9%A2%98%E6%AD%A3%E7%A1%AE%E9%A3%9F%E7%94%A8%E5%A7%BF%E5%8A%BF-%E9%9F%B3%E4%B9%90%E7%AF%87/</link>
+            <category>踩坑</category>
             <category>hexo</category>
             <category>shoka主题</category>
-            <category>踩坑</category>
             <pubDate>Sun, 29 Jan 2023 00:22:30 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202301291523489.png&#34; alt=&#34;image-20230129152257115&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;欢迎各位友友来-我后院建设中-里踩踩&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#欢迎各位友友来-我后院建设中-里踩踩&#34;&gt;#&lt;/a&gt; 🍭🍭欢迎各位友友来 &lt;a href=&#34;https://alicewanttobackuw.github.io/&#34;&gt;我后院 (建设中)&lt;/a&gt; 里踩踩🍭🍭&lt;/h1&gt;

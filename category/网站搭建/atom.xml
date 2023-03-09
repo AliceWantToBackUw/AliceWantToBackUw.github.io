@@ -4,13 +4,14 @@
     <title>Hexo • Posts by &#34;网站搭建&#34; category</title>
     <link href="https://alicewanttobackuw.github.io" />
     <updated>2023-01-28T16:22:30.000Z</updated>
-    <category term="hexo" />
-    <category term="shoka主题" />
+    <category term="安装包" />
     <category term="踩坑" />
     <category term="NLP" />
     <category term="文本分类" />
     <category term="合工大" />
     <category term="深度学习" />
+    <category term="hexo" />
+    <category term="shoka主题" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2023/01/29/shoka%E4%B8%BB%E9%A2%98%E6%AD%A3%E7%A1%AE%E9%A3%9F%E7%94%A8%E5%A7%BF%E5%8A%BF-%E9%9F%B3%E4%B9%90%E7%AF%87/</id>
         <title>🎶hexo的shoka主题正确食用姿势——音乐篇🎶</title>
@@ -78,9 +79,9 @@ csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4u
 &lt;p&gt;​	看似这么简单的配置问题，硬是花了 2 个多小时查找，中间不停的报错，人都快疯了😢。终于，老天不负有心❤人。在不断地试错，不断的分析下，才知道错哪了。过程虽然是痛苦难熬的，但历经挫折，收获的成果是享受的！&lt;br /&gt;
 ​	试有所得，于作此篇。&lt;/p&gt;
 </content>
+        <category term="踩坑" />
         <category term="hexo" />
         <category term="shoka主题" />
-        <category term="踩坑" />
         <updated>2023-01-28T16:22:30.000Z</updated>
     </entry>
 </feed>
