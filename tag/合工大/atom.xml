@@ -4,14 +4,14 @@
     <title>Hexo • Posts by &#34;合工大&#34; tag</title>
     <link href="https://alicewanttobackuw.github.io" />
     <updated>2023-01-29T07:12:11.000Z</updated>
-    <category term="NLP" />
-    <category term="文本分类" />
-    <category term="合工大" />
-    <category term="深度学习" />
     <category term="安装包" />
     <category term="踩坑" />
     <category term="hexo" />
     <category term="shoka主题" />
+    <category term="NLP" />
+    <category term="文本分类" />
+    <category term="合工大" />
+    <category term="深度学习" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2023/01/29/%E5%8C%BB%E7%96%97%E8%AF%8A%E6%96%AD%E6%96%87%E6%9C%AC%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98%EF%BC%88NLP)%EF%BC%88%E5%90%88%E5%B7%A5%E5%A4%A7%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%89/</id>
         <title>🤖医疗诊断文本多分类问题（NLP)（合工大机器学习）</title>
