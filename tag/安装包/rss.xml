@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Wed, 01 Mar 2023 20:45:45 +0800</pubDate>
         <lastBuildDate>Wed, 01 Mar 2023 20:45:45 +0800</lastBuildDate>
-        <category>安装包</category>
-        <category>踩坑</category>
         <category>NLP</category>
         <category>文本分类</category>
         <category>合工大</category>
         <category>深度学习</category>
+        <category>安装包</category>
+        <category>踩坑</category>
         <category>hexo</category>
         <category>shoka主题</category>
         <item>
@@ -31,26 +31,30 @@
 github	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0FsaWNlV2FudFRvQmFja1V3&#34;&gt;https://github.com/AliceWantToBackUw&lt;/span&gt;&lt;br /&gt;
 csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlbmd5dWUyOQ==&#34;&gt;https://blog.csdn.net/lengyue29&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📢 &lt;strong&gt;更新说明&lt;/strong&gt;：&lt;br /&gt;
+由于用于 cdn 加速的 &lt;code&gt;staticaly.com&lt;/code&gt;  域名过期，移至新域名 &lt;code&gt;statically.io&lt;/code&gt; ，导致图片无法加载，现已修复&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#报错&#34;&gt;#&lt;/a&gt; 💢报错&lt;/h3&gt;
 &lt;p&gt;​		安装 &lt;code&gt;pyopenjtalk&lt;/code&gt;  始终报错&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012018645.png&#34; alt=&#34;image-20230301201834550&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012018645.png&#34; alt=&#34;image-20230301201834550&#34; /&gt;&lt;br /&gt;
 ​		没有找到 &lt;code&gt;cmake&lt;/code&gt;  的模块。&lt;/p&gt;
 &lt;h3 id=&#34;解决&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决&#34;&gt;#&lt;/a&gt; 💘解决&lt;/h3&gt;
-&lt;p&gt;​		先去 &lt;code&gt;github&lt;/code&gt;  查看该包&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3I5eTkvcHlvcGVuanRhbGsvaXNzdWVzLzMz&#34;&gt; cmake がインストールしたのに &amp;quot;ModuleNotFoundError: No module named &#39;cmake&#39;&amp;quot;・Issue #33・r9y9/pyopenjtalk (github.com)&lt;/span&gt;&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012022638.png&#34; alt=&#34;image-20230301202246542&#34; /&gt;&lt;br /&gt;
+&lt;p&gt;​		先去 &lt;code&gt;github&lt;/code&gt;  查看该包&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3I5eTkvcHlvcGVuanRhbGsvaXNzdWVzLzMz&#34;&gt; cmake がインストールしたのに &amp;quot;ModuleNotFoundError: No module named &#39;cmake&#39;&amp;quot;・Issue #33・r9y9/pyopenjtalk (github.com)&lt;/span&gt;&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012022638.png&#34; alt=&#34;image-20230301202246542&#34; /&gt;&lt;br /&gt;
 ​		可以发现有人已经提出来了，给出了他的修改方案&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012023005.png&#34; alt=&#34;image-20230301202344923&#34; /&gt;&lt;/p&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012023005.png&#34; alt=&#34;image-20230301202344923&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;将 &lt;code&gt;python&lt;/code&gt;  编译器添加到&lt;strong&gt;系统环境变量&lt;/strong&gt;中，&lt;/li&gt;
 &lt;li&gt;注意是将 &lt;code&gt;Visual Studio&lt;/code&gt;  的 &lt;code&gt;CMake\bin&lt;/code&gt;  添加到系统环境变量中！！&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012026928.png&#34; alt=&#34;image-20230301202611859&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012026928.png&#34; alt=&#34;image-20230301202611859&#34; /&gt;&lt;br /&gt;
  原因：可能是 &lt;code&gt;README.md&lt;/code&gt;  提到的  需要 C/C++ 编译器扩展&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012028187.png&#34; alt=&#34;image-20230301202842114&#34; /&gt;&lt;/li&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012028187.png&#34; alt=&#34;image-20230301202842114&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;​		至此，可以 &lt;code&gt;pip install pyopenjtalk&lt;/code&gt;  安装成功了。&lt;br /&gt;
 ​		但是，部分人还是无法安装成功，请 &lt;code&gt;pip list&lt;/code&gt;  检查一下是否安装了 &lt;code&gt;cmake&lt;/code&gt;  包。&lt;br /&gt;
 先 &lt;code&gt;pip uninstall cmake&lt;/code&gt; &lt;strong&gt; 卸载&lt;/strong&gt; &lt;code&gt;cmake&lt;/code&gt; ，&lt;strong&gt;再安装&lt;/strong&gt;！&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034131.png&#34; alt=&#34;image-20230301203417042&#34; /&gt;&lt;br /&gt;
-&lt;img data-src=&#34;https://cdn.staticaly.com/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034890.png&#34; alt=&#34;image-20230301203437790&#34; /&gt;&lt;/p&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034131.png&#34; alt=&#34;image-20230301203417042&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034890.png&#34; alt=&#34;image-20230301203437790&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;终于安装完成了累麻了&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终于安装完成了累麻了&#34;&gt;#&lt;/a&gt; 😥终于安装完成了，累麻了……&lt;/h3&gt;
  ]]></description>
         </item>
