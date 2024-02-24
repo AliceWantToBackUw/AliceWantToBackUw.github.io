@@ -5,6 +5,29 @@
     "home_page_url": "https://alicewanttobackuw.github.io",
     "items": [
         {
+            "id": "https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/",
+            "url": "https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/",
+            "title": "微信小程序vantUI组件真机调试下样式错乱问题",
+            "date_published": "2024-01-16T02:43:08.000Z",
+            "content_html": "<p><strong>版本：</strong> <code>van-weapp: 1.11.2</code> <br />\n** 解决办法：** 删除 <code>app.json</code>  的 <code>&quot;componentFramework&quot;: &quot;glass-easel&quot;</code></p>\n<p><img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241558627.png\" alt=\"20240224\" /></p>\n<p>它会导致 <code>van-tab、van-field、van-search</code>  等组件真机调试下，样式出现问题</p>\n<p>** 附：** 在 <code>github</code>  上得到的回答<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL3lvdXphbi92YW50LXdlYXBwL2lzc3Vlcy81NzAw\"> van-search 搜索框问题・Issue #5700・youzan/vant-weapp (github.com)</span></p>\n",
+            "tags": [
+                "踩坑",
+                "vantUI",
+                "微信开发者工具"
+            ]
+        },
+        {
+            "id": "https://alicewanttobackuw.github.io/2024/01/09/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%B1%80%E5%9F%9F%E7%BD%91%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%89%93%E4%B8%8D%E5%BC%80%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%BF%9E%E6%8E%A5%E5%B1%80%E5%9F%9F%E7%BD%91wsxxx.xxx.xxx.xxx8001%E5%A4%B1%E8%B4%A5%EF%BC%89/",
+            "url": "https://alicewanttobackuw.github.io/2024/01/09/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%B1%80%E5%9F%9F%E7%BD%91%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%89%93%E4%B8%8D%E5%BC%80%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%BF%9E%E6%8E%A5%E5%B1%80%E5%9F%9F%E7%BD%91wsxxx.xxx.xxx.xxx8001%E5%A4%B1%E8%B4%A5%EF%BC%89/",
+            "title": "微信小程序真机调试局域网模式下打不开小程序（连接局域网wsxxx.xxx.xxx.xxx8001失败）",
+            "date_published": "2024-01-09T06:53:42.000Z",
+            "content_html": "<h3 id=\"报错\"><a class=\"anchor\" href=\"#报错\">#</a> 报错</h3>\n<p><img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241603635.png\" alt=\"error\" /></p>\n<h3 id=\"解决方式\"><a class=\"anchor\" href=\"#解决方式\">#</a> 解决方式</h3>\n<p>确保<strong>手机</strong>和<strong>电脑</strong>连接<strong>同一个局域网</strong>；<strong>不要</strong>勾选 <code>局域网模式</code> <br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241604020.png\" alt=\"img\" /></p>\n<h3 id=\"完整步骤\"><a class=\"anchor\" href=\"#完整步骤\">#</a> 完整步骤</h3>\n<ul>\n<li>查看本机的 IP 地址<br />\n <code>Win + R</code>  输入 <code>cmd</code>  打开命令行工具，使用 <code>ipconfig</code>  查看本地服务器 ip<br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605463.png\" alt=\"img\" /></li>\n<li>配置小程序的请求路径<br />\n<strong>不要</strong>使用 <code>localhost</code> ，改成查询到的 <code>IP地址</code> 和 <code>端口号</code> <br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605008.png\" alt=\"img\" /><br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605538.png\" alt=\"img\" /></li>\n<li>关闭防火墙<br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605622.png\" alt=\"在这里插入图片描述\" /></li>\n<li><strong>勾选</strong> “微信开发者工具” 里的 <code>不校验合法域名……</code>  选项<br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241606324.png\" alt=\"img\" /><br />\n<strong> 调式窗口</strong>里的 <code>不校验合法域名……</code>  可勾可不勾<br />\n<img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241606478.png\" alt=\"在这里插入图片描述\" /></li>\n</ul>\n",
+            "tags": [
+                "踩坑",
+                "微信开发者工具"
+            ]
+        },
+        {
             "id": "https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/",
             "url": "https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/",
             "title": "💢pyopenjtalk安装中解决error:subprocess-exited-with-error",

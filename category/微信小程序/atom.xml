@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://alicewanttobackuw.github.io</id>
+    <title>Hexo • Posts by &#34;微信小程序&#34; category</title>
+    <link href="https://alicewanttobackuw.github.io" />
+    <updated>2024-01-16T02:43:08.000Z</updated>
+    <category term="安装包" />
+    <category term="踩坑" />
+    <category term="NLP" />
+    <category term="文本分类" />
+    <category term="合工大" />
+    <category term="深度学习" />
+    <category term="vantUI" />
+    <category term="微信开发者工具" />
+    <category term="hexo" />
+    <category term="shoka主题" />
+    <entry>
+        <id>https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</id>
+        <title>微信小程序vantUI组件真机调试下样式错乱问题</title>
+        <link rel="alternate" href="https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;版本：&lt;/strong&gt; &lt;code&gt;van-weapp: 1.11.2&lt;/code&gt; &lt;br /&gt;
+** 解决办法：** 删除 &lt;code&gt;app.json&lt;/code&gt;  的 &lt;code&gt;&amp;quot;componentFramework&amp;quot;: &amp;quot;glass-easel&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241558627.png&#34; alt=&#34;20240224&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;它会导致 &lt;code&gt;van-tab、van-field、van-search&lt;/code&gt;  等组件真机调试下，样式出现问题&lt;/p&gt;
+&lt;p&gt;** 附：** 在 &lt;code&gt;github&lt;/code&gt;  上得到的回答&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3lvdXphbi92YW50LXdlYXBwL2lzc3Vlcy81NzAw&#34;&gt; van-search 搜索框问题・Issue #5700・youzan/vant-weapp (github.com)&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="踩坑" />
+        <category term="vantUI" />
+        <category term="微信开发者工具" />
+        <updated>2024-01-16T02:43:08.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://alicewanttobackuw.github.io/2024/01/09/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%B1%80%E5%9F%9F%E7%BD%91%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%89%93%E4%B8%8D%E5%BC%80%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%BF%9E%E6%8E%A5%E5%B1%80%E5%9F%9F%E7%BD%91wsxxx.xxx.xxx.xxx8001%E5%A4%B1%E8%B4%A5%EF%BC%89/</id>
+        <title>微信小程序真机调试局域网模式下打不开小程序（连接局域网wsxxx.xxx.xxx.xxx8001失败）</title>
+        <link rel="alternate" href="https://alicewanttobackuw.github.io/2024/01/09/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%B1%80%E5%9F%9F%E7%BD%91%E6%A8%A1%E5%BC%8F%E4%B8%8B%E6%89%93%E4%B8%8D%E5%BC%80%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%BF%9E%E6%8E%A5%E5%B1%80%E5%9F%9F%E7%BD%91wsxxx.xxx.xxx.xxx8001%E5%A4%B1%E8%B4%A5%EF%BC%89/"/>
+        <content type="html">&lt;h3 id=&#34;报错&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#报错&#34;&gt;#&lt;/a&gt; 报错&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241603635.png&#34; alt=&#34;error&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解决方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方式&#34;&gt;#&lt;/a&gt; 解决方式&lt;/h3&gt;
+&lt;p&gt;确保&lt;strong&gt;手机&lt;/strong&gt;和&lt;strong&gt;电脑&lt;/strong&gt;连接&lt;strong&gt;同一个局域网&lt;/strong&gt;；&lt;strong&gt;不要&lt;/strong&gt;勾选 &lt;code&gt;局域网模式&lt;/code&gt; &lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241604020.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;完整步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#完整步骤&#34;&gt;#&lt;/a&gt; 完整步骤&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;查看本机的 IP 地址&lt;br /&gt;
+ &lt;code&gt;Win + R&lt;/code&gt;  输入 &lt;code&gt;cmd&lt;/code&gt;  打开命令行工具，使用 &lt;code&gt;ipconfig&lt;/code&gt;  查看本地服务器 ip&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605463.png&#34; alt=&#34;img&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;配置小程序的请求路径&lt;br /&gt;
+&lt;strong&gt;不要&lt;/strong&gt;使用 &lt;code&gt;localhost&lt;/code&gt; ，改成查询到的 &lt;code&gt;IP地址&lt;/code&gt; 和 &lt;code&gt;端口号&lt;/code&gt; &lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605008.png&#34; alt=&#34;img&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605538.png&#34; alt=&#34;img&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;关闭防火墙&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241605622.png&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;勾选&lt;/strong&gt; “微信开发者工具” 里的 &lt;code&gt;不校验合法域名……&lt;/code&gt;  选项&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241606324.png&#34; alt=&#34;img&#34; /&gt;&lt;br /&gt;
+&lt;strong&gt; 调式窗口&lt;/strong&gt;里的 &lt;code&gt;不校验合法域名……&lt;/code&gt;  可勾可不勾&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241606478.png&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="踩坑" />
+        <category term="微信开发者工具" />
+        <updated>2024-01-09T06:53:42.000Z</updated>
+    </entry>
+</feed>

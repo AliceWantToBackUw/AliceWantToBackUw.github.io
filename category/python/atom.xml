@@ -6,12 +6,14 @@
     <updated>2023-03-01T12:45:45.000Z</updated>
     <category term="安装包" />
     <category term="踩坑" />
-    <category term="hexo" />
-    <category term="shoka主题" />
     <category term="NLP" />
     <category term="文本分类" />
     <category term="合工大" />
     <category term="深度学习" />
+    <category term="vantUI" />
+    <category term="微信开发者工具" />
+    <category term="hexo" />
+    <category term="shoka主题" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</id>
         <title>💢pyopenjtalk安装中解决error:subprocess-exited-with-error</title>

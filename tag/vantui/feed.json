@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Hexo • All posts by \"vantui\" tag",
+    "description": "",
+    "home_page_url": "https://alicewanttobackuw.github.io",
+    "items": [
+        {
+            "id": "https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/",
+            "url": "https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/",
+            "title": "微信小程序vantUI组件真机调试下样式错乱问题",
+            "date_published": "2024-01-16T02:43:08.000Z",
+            "content_html": "<p><strong>版本：</strong> <code>van-weapp: 1.11.2</code> <br />\n** 解决办法：** 删除 <code>app.json</code>  的 <code>&quot;componentFramework&quot;: &quot;glass-easel&quot;</code></p>\n<p><img data-src=\"https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241558627.png\" alt=\"20240224\" /></p>\n<p>它会导致 <code>van-tab、van-field、van-search</code>  等组件真机调试下，样式出现问题</p>\n<p>** 附：** 在 <code>github</code>  上得到的回答<span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL3lvdXphbi92YW50LXdlYXBwL2lzc3Vlcy81NzAw\"> van-search 搜索框问题・Issue #5700・youzan/vant-weapp (github.com)</span></p>\n",
+            "tags": [
+                "踩坑",
+                "vantUI",
+                "微信开发者工具"
+            ]
+        }
+    ]
+}

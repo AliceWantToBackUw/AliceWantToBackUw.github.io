@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;vantui&#34; tag</title>
+        <link>https://alicewanttobackuw.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 16 Jan 2024 10:43:08 +0800</pubDate>
+        <lastBuildDate>Tue, 16 Jan 2024 10:43:08 +0800</lastBuildDate>
+        <category>安装包</category>
+        <category>踩坑</category>
+        <category>NLP</category>
+        <category>文本分类</category>
+        <category>合工大</category>
+        <category>深度学习</category>
+        <category>vantUI</category>
+        <category>微信开发者工具</category>
+        <category>hexo</category>
+        <category>shoka主题</category>
+        <item>
+            <guid isPermalink="true">https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</guid>
+            <title>微信小程序vantUI组件真机调试下样式错乱问题</title>
+            <link>https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</link>
+            <category>踩坑</category>
+            <category>vantUI</category>
+            <category>微信开发者工具</category>
+            <pubDate>Tue, 16 Jan 2024 10:43:08 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;版本：&lt;/strong&gt; &lt;code&gt;van-weapp: 1.11.2&lt;/code&gt; &lt;br /&gt;
+** 解决办法：** 删除 &lt;code&gt;app.json&lt;/code&gt;  的 &lt;code&gt;&amp;quot;componentFramework&amp;quot;: &amp;quot;glass-easel&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202402241558627.png&#34; alt=&#34;20240224&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;它会导致 &lt;code&gt;van-tab、van-field、van-search&lt;/code&gt;  等组件真机调试下，样式出现问题&lt;/p&gt;
+&lt;p&gt;** 附：** 在 &lt;code&gt;github&lt;/code&gt;  上得到的回答&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3lvdXphbi92YW50LXdlYXBwL2lzc3Vlcy81NzAw&#34;&gt; van-search 搜索框问题・Issue #5700・youzan/vant-weapp (github.com)&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
