@@ -4,6 +4,10 @@
     <title>Hexo • Posts by &#34;踩坑&#34; tag</title>
     <link href="https://alicewanttobackuw.github.io" />
     <updated>2024-01-16T02:43:08.000Z</updated>
+    <category term="Visual Studio Code" />
+    <category term="CMake" />
+    <category term="Visual Studio" />
+    <category term="MinGW" />
     <category term="hexo" />
     <category term="shoka主题" />
     <category term="踩坑" />
@@ -14,10 +18,6 @@
     <category term="深度学习" />
     <category term="vantUI" />
     <category term="微信开发者工具" />
-    <category term="Visual Studio Code" />
-    <category term="CMake" />
-    <category term="Visual Studio" />
-    <category term="MinGW" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</id>
         <title>微信小程序vantUI组件真机调试下样式错乱问题</title>

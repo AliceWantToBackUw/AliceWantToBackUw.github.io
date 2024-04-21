@@ -4,6 +4,10 @@
     <title>Hexo • Posts by &#34;python&#34; category</title>
     <link href="https://alicewanttobackuw.github.io" />
     <updated>2023-03-01T12:45:45.000Z</updated>
+    <category term="Visual Studio Code" />
+    <category term="CMake" />
+    <category term="Visual Studio" />
+    <category term="MinGW" />
     <category term="hexo" />
     <category term="shoka主题" />
     <category term="踩坑" />
@@ -14,10 +18,6 @@
     <category term="深度学习" />
     <category term="vantUI" />
     <category term="微信开发者工具" />
-    <category term="Visual Studio Code" />
-    <category term="CMake" />
-    <category term="Visual Studio" />
-    <category term="MinGW" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</id>
         <title>💢pyopenjtalk安装中解决error:subprocess-exited-with-error</title>

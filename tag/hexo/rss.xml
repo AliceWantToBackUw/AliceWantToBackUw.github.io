@@ -7,6 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Sun, 29 Jan 2023 00:22:30 +0800</pubDate>
         <lastBuildDate>Sun, 29 Jan 2023 00:22:30 +0800</lastBuildDate>
+        <category>Visual Studio Code</category>
+        <category>CMake</category>
+        <category>Visual Studio</category>
+        <category>MinGW</category>
         <category>hexo</category>
         <category>shoka主题</category>
         <category>踩坑</category>
@@ -17,10 +21,6 @@
         <category>深度学习</category>
         <category>vantUI</category>
         <category>微信开发者工具</category>
-        <category>Visual Studio Code</category>
-        <category>CMake</category>
-        <category>Visual Studio</category>
-        <category>MinGW</category>
         <item>
             <guid isPermalink="true">https://alicewanttobackuw.github.io/2023/01/29/shoka%E4%B8%BB%E9%A2%98%E6%AD%A3%E7%A1%AE%E9%A3%9F%E7%94%A8%E5%A7%BF%E5%8A%BF-%E9%9F%B3%E4%B9%90%E7%AF%87/</guid>
             <title>🎶hexo的shoka主题正确食用姿势——音乐篇🎶</title>
