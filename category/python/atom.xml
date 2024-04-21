@@ -4,16 +4,20 @@
     <title>Hexo • Posts by &#34;python&#34; category</title>
     <link href="https://alicewanttobackuw.github.io" />
     <updated>2023-03-01T12:45:45.000Z</updated>
-    <category term="安装包" />
+    <category term="hexo" />
+    <category term="shoka主题" />
     <category term="踩坑" />
+    <category term="安装包" />
     <category term="NLP" />
     <category term="文本分类" />
     <category term="合工大" />
     <category term="深度学习" />
     <category term="vantUI" />
     <category term="微信开发者工具" />
-    <category term="hexo" />
-    <category term="shoka主题" />
+    <category term="Visual Studio Code" />
+    <category term="CMake" />
+    <category term="Visual Studio" />
+    <category term="MinGW" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</id>
         <title>💢pyopenjtalk安装中解决error:subprocess-exited-with-error</title>
@@ -53,8 +57,8 @@ csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4u
 &lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034890.png&#34; alt=&#34;image-20230301203437790&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;终于安装完成了累麻了&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终于安装完成了累麻了&#34;&gt;#&lt;/a&gt; 😥终于安装完成了，累麻了……&lt;/h3&gt;
 </content>
-        <category term="安装包" />
         <category term="踩坑" />
+        <category term="安装包" />
         <updated>2023-03-01T12:45:45.000Z</updated>
     </entry>
 </feed>

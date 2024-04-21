@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;visual studio code&#34; tag</title>
+        <link>https://alicewanttobackuw.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 21 Apr 2024 14:05:15 +0800</pubDate>
+        <lastBuildDate>Sun, 21 Apr 2024 14:05:15 +0800</lastBuildDate>
+        <category>hexo</category>
+        <category>shoka主题</category>
+        <category>踩坑</category>
+        <category>安装包</category>
+        <category>NLP</category>
+        <category>文本分类</category>
+        <category>合工大</category>
+        <category>深度学习</category>
+        <category>vantUI</category>
+        <category>微信开发者工具</category>
+        <category>Visual Studio Code</category>
+        <category>CMake</category>
+        <category>Visual Studio</category>
+        <category>MinGW</category>
+        <item>
+            <guid isPermalink="true">https://alicewanttobackuw.github.io/2024/04/21/Visual%20Studio%20Code%E4%BD%BF%E7%94%A8CMake/</guid>
+            <title>Visual Studio Code使用CMake</title>
+            <link>https://alicewanttobackuw.github.io/2024/04/21/Visual%20Studio%20Code%E4%BD%BF%E7%94%A8CMake/</link>
+            <category>Visual Studio Code</category>
+            <category>CMake</category>
+            <category>Visual Studio</category>
+            <category>MinGW</category>
+            <pubDate>Sun, 21 Apr 2024 14:05:15 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;📢 声明：&lt;br /&gt;
+转载，请先标注出处哦！编写不易，尊重一下劳动成果哦！&lt;br /&gt;
+个人博客网站 	==》&lt;a href=&#34;https://alicewanttobackuw.github.io/&#34;&gt;https://alicewanttobackuw.github.io/&lt;/a&gt;&lt;br /&gt;
+github	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0FsaWNlV2FudFRvQmFja1V3&#34;&gt;https://github.com/AliceWantToBackUw&lt;/span&gt;&lt;br /&gt;
+csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xlbmd5dWUyOQ==&#34;&gt;https://blog.csdn.net/lengyue29&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;visual-studio-code使用cmake&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#visual-studio-code使用cmake&#34;&gt;#&lt;/a&gt; Visual Studio Code 使用 CMake&lt;/h1&gt;
+&lt;h2 id=&#34;1前置条件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1前置条件&#34;&gt;#&lt;/a&gt; 1	前置条件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;安装 &lt;code&gt;CMake&lt;/code&gt; ：通过 &lt;code&gt;cmake -version&lt;/code&gt;  检查有无安装成功&lt;/li&gt;
+&lt;li&gt;安装 &lt;code&gt;MinGW&lt;/code&gt; （目录 3.2 需要）：参考文章&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3NkbmltZy5jbi85Sm81Wg==&#34;&gt; http://t.csdnimg.cn/9Jo5Z&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2创建一个简单项目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2创建一个简单项目&#34;&gt;#&lt;/a&gt; 2	创建一个简单项目&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;//-------head.h
+#ifndef _HEAD_H
+#define _HEAD_H
+// 加法
+int add(int a, int b);
+// 减法
+int subtract(int a, int b);
+// 乘法
+int multiply(int a, int b);
+// 除法
+double divide(int a, int b);
+#endif
+
+
+//-------add.cpp
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;quot;head.h&amp;quot;
+
+int add(int a, int b)
+&amp;#123;
+  return a + b;
+&amp;#125;
+
+
+//-------div.cpp
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;quot;head.h&amp;quot;
+
+double divide(int a, int b)
+&amp;#123;
+  return (double)a / b;
+&amp;#125;
+
+
+
+//-------mul.cpp
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;quot;head.h&amp;quot;
+
+int multiply(int a, int b)
+&amp;#123;
+  return a * b;
+&amp;#125;
+
+
+
+//-------sub.cpp
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;quot;head.h&amp;quot;
+
+// 减法
+int subtract(int a, int b)
+&amp;#123;
+  return a - b;
+&amp;#125;
+
+
+
+//-------main.cpp
+#include &amp;lt;stdio.h&amp;gt;
+#include &amp;quot;head.h&amp;quot;
+
+int main()
+&amp;#123;
+  int a = 20;
+  int b = 12;
+  printf(&amp;quot;a = %d, b = %d\n&amp;quot;, a, b);
+  printf(&amp;quot;a + b = %d\n&amp;quot;, add(a, b));
+  printf(&amp;quot;a - b = %d\n&amp;quot;, subtract(a, b));
+  printf(&amp;quot;a * b = %d\n&amp;quot;, multiply(a, b));
+  printf(&amp;quot;a / b = %f\n&amp;quot;, divide(a, b));
+  return 0;
+&amp;#125;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;项目结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#项目结构&#34;&gt;#&lt;/a&gt; 项目结构&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;03cmake
+├─ .vscode
+│  ├─ c_cpp_properties.json
+│  └─ tasks.json
+├─ add.cpp
+├─ CMakeLists.txt
+├─ div.cpp
+├─ head.h
+├─ main.cpp
+├─ mult.cpp
+└─ sub.cpp
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3windows下生成可执行程序&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3windows下生成可执行程序&#34;&gt;#&lt;/a&gt; 3	Windows 下生成可执行程序&lt;/h2&gt;
+&lt;h3 id=&#34;31通过生成vs项目再由vs编译生成而得&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#31通过生成vs项目再由vs编译生成而得&#34;&gt;#&lt;/a&gt; 3.1	通过生成 vs 项目，再由 vs 编译生成而得&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3NkbmltZy5jbi96UVA1Nw==&#34;&gt;http://t.csdnimg.cn/zQP57&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 windows 环境下，在根目录使用下列命令，会默认生成 &lt;code&gt;Visual Studio&lt;/code&gt;  项目工程文件&lt;/p&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cmake .&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;此时的项目结构变成了&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;03cmake
+├─ .vscode
+│  ├─ c_cpp_properties.json
+│  └─ tasks.json
+├─ 03make.vcxproj
+├─ 03make.vcxproj.filters
+├─ add.cpp
+├─ ALL_BUILD.vcxproj
+├─ ALL_BUILD.vcxproj.filters
+├─ CMakeCache.txt
+├─ CMakeFiles
+│  ├─ 3.29.0-rc4
+│  │  ├─ CMakeCCompiler.cmake
+│  │  ├─ CMakeCXXCompiler.cmake
+│  │  ├─ CMakeDetermineCompilerABI_C.bin
+│  │  ├─ CMakeDetermineCompilerABI_CXX.bin
+│  │  ├─ CMakeRCCompiler.cmake
+│  │  ├─ CMakeSystem.cmake
+│  │  ├─ CompilerIdC
+│  │  │  ├─ CMakeCCompilerId.c
+│  │  │  ├─ CompilerIdC.exe
+│  │  │  ├─ CompilerIdC.vcxproj
+│  │  │  ├─ Debug
+│  │  │  │  ├─ CMakeCCompilerId.obj
+│  │  │  │  ├─ CompilerIdC.exe.recipe
+│  │  │  │  └─ CompilerIdC.tlog
+│  │  │  │     ├─ CL.command.1.tlog
+│  │  │  │     ├─ CL.read.1.tlog
+│  │  │  │     ├─ CL.write.1.tlog
+│  │  │  │     ├─ CompilerIdC.lastbuildstate
+│  │  │  │     ├─ link.command.1.tlog
+│  │  │  │     ├─ link.read.1.tlog
+│  │  │  │     └─ link.write.1.tlog
+│  │  │  └─ tmp
+│  │  ├─ CompilerIdCXX
+│  │  │  ├─ CMakeCXXCompilerId.cpp
+│  │  │  ├─ CompilerIdCXX.exe
+│  │  │  ├─ CompilerIdCXX.vcxproj
+│  │  │  ├─ Debug
+│  │  │  │  ├─ CMakeCXXCompilerId.obj
+│  │  │  │  ├─ CompilerIdCXX.exe.recipe
+│  │  │  │  └─ CompilerIdCXX.tlog
+│  │  │  │     ├─ CL.command.1.tlog
+│  │  │  │     ├─ CL.read.1.tlog
+│  │  │  │     ├─ CL.write.1.tlog
+│  │  │  │     ├─ CompilerIdCXX.lastbuildstate
+│  │  │  │     ├─ link.command.1.tlog
+│  │  │  │     ├─ link.read.1.tlog
+│  │  │  │     └─ link.write.1.tlog
+│  │  │  └─ tmp
+│  │  ├─ VCTargetsPath.txt
+│  │  ├─ VCTargetsPath.vcxproj
+│  │  └─ x64
+│  │     └─ Debug
+│  │        ├─ VCTargetsPath.recipe
+│  │        └─ VCTargetsPath.tlog
+│  │           └─ VCTargetsPath.lastbuildstate
+│  ├─ c1c397eb2ba1589aadad67e99cf541fa
+│  │  └─ generate.stamp.rule
+│  ├─ cmake.check_cache
+│  ├─ CMakeConfigureLog.yaml
+│  ├─ CMakeScratch
+│  ├─ generate.stamp
+│  ├─ generate.stamp.depend
+│  ├─ generate.stamp.list
+│  ├─ pkgRedirects
+│  └─ TargetDirectories.txt
+├─ CMakeLists.txt
+├─ cmake_install.cmake
+├─ demo.sln
+├─ div.cpp
+├─ head.h
+├─ main.cpp
+├─ mult.cpp
+├─ README.md
+├─ sub.cpp
+├─ ZERO_CHECK.vcxproj
+└─ ZERO_CHECK.vcxproj.filters
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;你需要用 &lt;code&gt;Visual Studio&lt;/code&gt;  来打开 &lt;code&gt;.sln&lt;/code&gt;  项目文件，然后运行，才能够生成可执行程序。&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211409965.png&#34; alt=&#34;image-20240421131922690&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;生成成功，你可在项目根路径查看到 &lt;code&gt;debug&lt;/code&gt;  目录，其中有个 &lt;code&gt;03make.exe&lt;/code&gt; （你自己在 CMakeLists.txt 设置名字）可执行程序&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211410700.png&#34; alt=&#34;image-20240421132357270&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;回到 &lt;code&gt;Visual Studio&lt;/code&gt; ，将 &lt;code&gt;03make&lt;/code&gt;  项目&lt;strong&gt;设为启动项目&lt;/strong&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211410069.png&#34; alt=&#34;image-20240421132537978&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;点击&lt;strong&gt;本地 Windows 调试器&lt;/strong&gt;即可&lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211410806.png&#34; alt=&#34;image-20240421132704416&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32通过生成makefiles文件再由mingw编译而得&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#32通过生成makefiles文件再由mingw编译而得&#34;&gt;#&lt;/a&gt; 3.2	通过生成 makefiles 文件，再由 MinGW 编译而得&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3QuY3NkbmltZy5jbi9tOUpxVw==&#34;&gt;http://t.csdnimg.cn/m9JqW&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先，先清理一下上面创建&lt;strong&gt; vs 工程文件&lt;/strong&gt;。由于之前使用直接在&lt;strong&gt;项目根目录&lt;/strong&gt;使用 cmake 命令（即 &lt;code&gt;cmake .&lt;/code&gt; ），因此所生成的&lt;strong&gt; vs 工程文件&lt;/strong&gt;，也会和原先的代码杂糅在一起。所以，只能够手动删除，保留源码和 &lt;code&gt;CMakeLists.txt&lt;/code&gt; 。&lt;br /&gt;
+至于如何高效的删除，请阅读这篇文章 [待补充](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93ZW5rdS5jc2RuLm5ldC9hbnN3ZXIvOWNlMTUwNzlhMTM5NDRmNmFjYzhjZjA1OWYwOWQ3NWIjOn46dGV4dD1jbWFrZQ==&#34;&gt;https://wenku.csdn.net/answer/9ce15079a13944f6acc8cf059f09d75b#:~:text=cmake&lt;/span&gt; 如何清理 1 使用 CMake 的 clean 命令：在项目的构建目录中运行以下命令可以清理生成的文件： cmake --build  ,  --target  distclean 其中，  是项目的构建目录。)&lt;/p&gt;
+&lt;p&gt;以下是删除后的项目结构&lt;/p&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;03cmake&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ .vscode&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│  ├─ c_cpp_properties.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;│  └─ tasks.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ add.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ CMakeLists.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ div.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ head.h&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ main.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ mult.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;├─ README.md&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;└─ sub.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;在项目根目录输入以下命令&lt;/p&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cmake -S ./ -B ./ -G &lt;span class=&#34;token string&#34;&gt;&#34;MinGW Makefiles&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;使用该命令可以直接生成 &lt;code&gt;makefiles&lt;/code&gt;  文件&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211411539.png&#34; alt=&#34;image-20240421134833521&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后可以通过以下命令，在项目根目录中调用 &lt;code&gt;MinGW&lt;/code&gt;  里面中 &lt;code&gt;mingw32-make.exe&lt;/code&gt;  程序编译生成。（这里我重命名为了 &lt;code&gt;make.exe&lt;/code&gt; ）&lt;/p&gt;
+&lt;figure class=&#34;highlight cmake&#34;&gt;&lt;figcaption data-lang=&#34;CMake&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;make&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;即可在当前目录下，生成可执行文件 &lt;code&gt;03make.exe&lt;/code&gt; &lt;br /&gt;
+&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211411128.png&#34; alt=&#34;image-20240421135257330&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;运行即可&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.\03make.exe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202404211413547.png&#34; alt=&#34;image-20240421135413439&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

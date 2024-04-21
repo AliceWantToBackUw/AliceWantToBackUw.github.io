@@ -4,16 +4,20 @@
     <title>Hexo • Posts by &#34;踩坑&#34; tag</title>
     <link href="https://alicewanttobackuw.github.io" />
     <updated>2024-01-16T02:43:08.000Z</updated>
-    <category term="安装包" />
+    <category term="hexo" />
+    <category term="shoka主题" />
     <category term="踩坑" />
+    <category term="安装包" />
     <category term="NLP" />
     <category term="文本分类" />
     <category term="合工大" />
     <category term="深度学习" />
     <category term="vantUI" />
     <category term="微信开发者工具" />
-    <category term="hexo" />
-    <category term="shoka主题" />
+    <category term="Visual Studio Code" />
+    <category term="CMake" />
+    <category term="Visual Studio" />
+    <category term="MinGW" />
     <entry>
         <id>https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</id>
         <title>微信小程序vantUI组件真机调试下样式错乱问题</title>
@@ -98,8 +102,8 @@ csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4u
 &lt;img data-src=&#34;https://cdn.statically.io/gh/AliceWantToBackUw/blog-img@main/PicGo/202303012034890.png&#34; alt=&#34;image-20230301203437790&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;终于安装完成了累麻了&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#终于安装完成了累麻了&#34;&gt;#&lt;/a&gt; 😥终于安装完成了，累麻了……&lt;/h3&gt;
 </content>
-        <category term="安装包" />
         <category term="踩坑" />
+        <category term="安装包" />
         <updated>2023-03-01T12:45:45.000Z</updated>
     </entry>
     <entry>
@@ -173,9 +177,9 @@ csdn	==》&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4u
 &lt;p&gt;​	看似这么简单的配置问题，硬是花了 2 个多小时查找，中间不停的报错，人都快疯了😢。终于，老天不负有心❤人。在不断地试错，不断的分析下，才知道错哪了。过程虽然是痛苦难熬的，但历经挫折，收获的成果是享受的！&lt;br /&gt;
 ​	试有所得，于作此篇。&lt;/p&gt;
 </content>
-        <category term="踩坑" />
         <category term="hexo" />
         <category term="shoka主题" />
+        <category term="踩坑" />
         <updated>2023-01-28T16:22:30.000Z</updated>
     </entry>
 </feed>

@@ -7,16 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Tue, 16 Jan 2024 10:43:08 +0800</pubDate>
         <lastBuildDate>Tue, 16 Jan 2024 10:43:08 +0800</lastBuildDate>
-        <category>安装包</category>
+        <category>hexo</category>
+        <category>shoka主题</category>
         <category>踩坑</category>
+        <category>安装包</category>
         <category>NLP</category>
         <category>文本分类</category>
         <category>合工大</category>
         <category>深度学习</category>
         <category>vantUI</category>
         <category>微信开发者工具</category>
-        <category>hexo</category>
-        <category>shoka主题</category>
+        <category>Visual Studio Code</category>
+        <category>CMake</category>
+        <category>Visual Studio</category>
+        <category>MinGW</category>
         <item>
             <guid isPermalink="true">https://alicewanttobackuw.github.io/2024/01/16/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FvantUI%E7%BB%84%E4%BB%B6%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E4%B8%8B%E6%A0%B7%E5%BC%8F%E9%94%99%E4%B9%B1%E9%97%AE%E9%A2%98/</guid>
             <title>微信小程序vantUI组件真机调试下样式错乱问题</title>
