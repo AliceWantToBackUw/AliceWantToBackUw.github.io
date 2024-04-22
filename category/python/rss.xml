@@ -11,22 +11,22 @@
         <category>CMake</category>
         <category>Visual Studio</category>
         <category>MinGW</category>
-        <category>hexo</category>
-        <category>shoka主题</category>
-        <category>踩坑</category>
         <category>安装包</category>
+        <category>踩坑</category>
         <category>NLP</category>
         <category>文本分类</category>
         <category>合工大</category>
         <category>深度学习</category>
+        <category>hexo</category>
+        <category>shoka主题</category>
         <category>vantUI</category>
         <category>微信开发者工具</category>
         <item>
             <guid isPermalink="true">https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</guid>
             <title>💢pyopenjtalk安装中解决error:subprocess-exited-with-error</title>
             <link>https://alicewanttobackuw.github.io/2023/03/01/pyopenjtalk%E5%AE%89%E8%A3%85/</link>
-            <category>踩坑</category>
             <category>安装包</category>
+            <category>踩坑</category>
             <pubDate>Wed, 01 Mar 2023 20:45:45 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pyopenjtalk安装中解决error-subprocess-exited-with-error&#34;&gt;#&lt;/a&gt; pyopenjtalk 安装中解决 error: subprocess-exited-with-error&lt;/h2&gt;
 &lt;blockquote&gt;
